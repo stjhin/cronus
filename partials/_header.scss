@@ -1,0 +1,51 @@
+header {
+    min-height: 100vh;
+    background: linear-gradient(45deg, $gradPurple, $gradPink);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    @include p5;
+}
+
+.wrapHero {
+    @include flexCenter;
+}
+
+.titleHero {
+    font-family: $primaryFont;
+    color: $primaryWhite;
+    font-size: 4rem;
+    font-weight: 800;
+    text-align: center;
+    line-height: 4rem;
+}
+.subtitleHero {
+    font-family: $primaryFont;
+    color: $primaryWhite;
+    text-transform: uppercase;
+    font-size: 1rem 5rem 1.25rem 5rem;
+    @include pt1;
+    @include pb5;
+}
+
+.ctaHero {
+    background-color: $primaryPurple;
+    font-family: $primaryFont;
+    padding: 1rem 5rem 1.25rem;
+    border-radius: 100rem;
+    color: $primaryWhite;
+    font-weight: 800;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: .8rem;
+}
+
+a.ctaHero:hover {
+    background-color: $primaryPink;
+}
+
+em.emHero {
+    font-family: $secondaryFont;
+    font-weight: 400;
+}

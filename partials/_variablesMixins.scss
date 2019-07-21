@@ -1,4 +1,5 @@
 // variables
+
     // colors
     $primaryPurple: #6e45e2;
     $primaryPink: #ed145b;
@@ -8,6 +9,115 @@
 
     // fonts
     $primaryFont: "Nunito", sans-serif;
-    $secondaryFont: "Libre Baskerville", serif;
+    $secondaryFont: 'Libre Baskerville', serif;
+
+    // gradients
+    $gradPurple: rgba(110, 69, 226, .5);
+    $gradPink: rgba(237, 20, 91, .5);
 
 // mixins
+
+    // vertical + horizontal centering w/ flexbox
+    @mixin flexCenter {
+        display: flex;
+        flex: 1 auto;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    @mixin flexCen {
+        display: flex;
+        align-items: center;
+    }
+
+    @mixin flexRow {
+        display: flex;
+        flex-direction: row;
+        flex: 1 auto;
+        justify-content: center;
+        align-items: center;
+    }
+
+    @mixin flexLeft {
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    @mixin flexLabel {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: flex-start;
+    }
+
+    @mixin flexRowfoo {
+        display: flex;
+        flex-direction: row;
+        flex: 1 auto;
+        justify-content: center;
+    }
+
+    @mixin flexInsta {
+        display: flex;
+        flex: 1 auto;
+        flex-flow: row wrap;
+    }
+
+    @mixin flexCopy {
+        display: flex;
+        justify-content: space-between;
+        flex: 1 auto;
+    }
+
+    //paddings
+    @mixin p1 {
+        padding: 1rem;
+    }
+
+    @mixin p3 {
+        padding: 3rem;
+    }
+
+    @mixin p5 {
+        padding: 5rem;
+    }
+
+    @mixin pt1 {
+        padding-top: 1rem;
+    }
+
+    @mixin pt2 {
+        padding-top: 2rem;
+    }
+
+    @mixin pt3 {
+        padding-top: 3rem;
+    }
+
+    @mixin pb2 {
+        padding-bottom: 2rem;
+    }
+
+    @mixin pb3 {
+        padding-bottom: 3rem;
+    }
+
+    @mixin pb5 {
+        padding-bottom: 5rem;
+    }
+
+    //margins in rem
+    @mixin mt3 {
+        margin-top: 3rem;
+    }
+
+    @mixin mtb5 {
+        margin-top: 5rem;
+        margin-bottom: 5rem;
+    }
+
+    @mixin ml2 {
+        margin-left: 2rem;
+    }
+
+        
