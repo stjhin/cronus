@@ -26,9 +26,10 @@
         flex-direction: column;
     }
 
-    @mixin flexCen {
+    @mixin flexMid {
         display: flex;
         align-items: center;
+        flex-direction: row;
     }
 
     @mixin flexRow {
@@ -41,7 +42,13 @@
 
     @mixin flexLeft {
         display: flex;
+        flex: 1 auto;
         justify-content: flex-start;
+    }
+
+    @mixin flexRight {
+        display: flex;
+        justify-content: flex-end;
     }
 
     @mixin flexLabel {
@@ -78,8 +85,9 @@
         padding: 3rem;
     }
 
-    @mixin p5 {
-        padding: 5rem;
+    @mixin ps3 {
+        padding-left: 3rem;
+        padding-right: 3rem;
     }
 
     @mixin pt1 {

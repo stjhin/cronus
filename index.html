@@ -10,28 +10,34 @@
     <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400i,700|Nunito:300,400,600,700,800,900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
+    <header class="container">
 <!-- nav -->
         <nav class="wrapHero">
             <div class="logo-header">
                 <img src="/assets/logos/logo-cronus.png" alt="Cronus logo">
+            <div class="hamburger"><i class="fa fa-bars"></i></div>
+            <div class="menu">
+                <ul class="nav-center">
+                    <li class="exit-cancel"><i class="fa fa-times"></i></li>
+                    <li><a class="topNav" href="#">Home</a></li>
+                    <li><a class="topNav" href="#">About</a></li>
+                    <li><a class="topNav" href="#">Services</a></li>
+                    <li><a class="topNav" href="#">Our Project</a></li>
+                    <li><a class="topNav" href="#">Page</a></li>
+                    <li><a class="topNav" href="#">Blog</a></li>
+                    <li><a class="topNav" href="#">Contact</a></li>
+                </ul>
             </div>
-            <ul class="nav-center">
-                <li><a href="">Home</a></li>
-                <li><a href="">About</a></li>
-                <li><a href="">Services</a></li>
-                <li><a href="">Our Project</a></li>
-                <li><a href="">Page</a></li>
-                <li><a href="">Blog</a></li>
-                <li><a href="">Contact</a></li>
-            </ul>
             <div class="nav-right">
                 <i class="fa fa-search"></i>
-                <i class="fa fa-search"></i>
+                <img class="flag" src="assets/Icons/icon-uk.svg">
+                <span class="country">EN</span>
+            </div>
             </div>
         </nav>
 <!-- hero -->
-        <div class="wrapHero">
+    <div class="containerText">
+        <div class="wrapText">
             <div class="titleHero">
                 We provide the best<br><em class="emHero">service</em> for business
             </div>
@@ -40,8 +46,45 @@
             </div>
             <a href="/about.html" class="ctaHero" target="_blank">Explore More</a>
         </div>
-
+    </div>
     </header>
-    
+<!-- main -->
+<main>
+
+</main>
+<!-- footer -->
+<footer class="wrapFooter">
+    <div class="footColumn">
+        <div class="logo-footer">
+            <img src="/assets/logos/logo-cronus.png" alt="Cronus logo">
+        </div>
+        <div class="footColumn">
+            <p>Eaque ipsa quaeillo inventore veritatis et quasi architecto beatea vitae dicta sunt explicabo. Nemo enim ipsam</p>
+            <p>Business Address</p>
+            <p>London Oxford Street, 012 United Kingdom</p>
+            <div class="footColumn">
+                <div class="footColumn">
+                    <p>Business Phone</p>
+                    <p>+032 3456 7890</p>
+                </div>
+                <div class="footColumn">
+                    <p>Business Email</p>
+                    <p>Business@moontheme.net</p>
+                </div>
+            </div>
+            <div class="footColumn">
+                <ul>
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- Load in jQuery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="js/index.js"></script>
 </body>
 </html>

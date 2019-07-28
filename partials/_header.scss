@@ -5,20 +5,16 @@ header {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    @include p5;
-}
-
-.wrapHero {
-    @include flexCenter;
+    @include ps3;
 }
 
 .titleHero {
     font-family: $primaryFont;
     color: $primaryWhite;
-    font-size: 4rem;
+    font-size: 3rem;
     font-weight: 800;
     text-align: center;
-    line-height: 4rem;
+    line-height: 2.75rem;
 }
 .subtitleHero {
     font-family: $primaryFont;
@@ -26,7 +22,7 @@ header {
     text-transform: uppercase;
     font-size: 1rem 5rem 1.25rem 5rem;
     @include pt1;
-    @include pb5;
+    @include pb3;
 }
 
 .ctaHero {
@@ -43,9 +39,15 @@ header {
 
 a.ctaHero:hover {
     background-color: $primaryPink;
+    color: $primaryWhite;
 }
 
 em.emHero {
     font-family: $secondaryFont;
     font-weight: 400;
+}
+
+/* Media Query */
+@media all and (max-width: 850px) {
+
 }
