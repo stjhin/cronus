@@ -1,5 +1,5 @@
 header {
-    min-height: 100vh;
+    min-height: 1000px;
     background: linear-gradient(45deg, $gradPurple, $gradPink);
     background-attachment: fixed;
     background-position: center;
@@ -11,10 +11,11 @@ header {
 .titleHero {
     font-family: $primaryFont;
     color: $primaryWhite;
-    font-size: 3rem;
+    font-size: 4rem;
     font-weight: 800;
     text-align: center;
-    line-height: 2.75rem;
+    margin-top: 10rem;
+    line-height: 4rem;
 }
 .subtitleHero {
     font-family: $primaryFont;
@@ -45,6 +46,39 @@ a.ctaHero:hover {
 em.emHero {
     font-family: $secondaryFont;
     font-weight: 400;
+}
+
+.leftText {
+    transform: rotate(270deg);
+    margin-top: 20rem;
+    font-family: $primaryFont;
+    color: $primaryWhite;
+}
+
+.rightText {
+    font-family: $primaryFont;
+    color: $primaryWhite;
+    transition: .3s all;
+    @include flexSlash;
+}
+
+a.slash {
+    position: relative;
+
+    &:before {
+        content: '';
+        position: absolute;
+        top: 0px;
+        left: 50%;
+        height: 30px;
+        transform: rotate(45deg);
+        width: 1px;
+        background: white;
+        opacity: 0;
+    }
+    &:hover:before {
+        opacity: 1;
+    }
 }
 
 /* Media Query */

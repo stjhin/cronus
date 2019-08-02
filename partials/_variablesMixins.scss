@@ -5,6 +5,7 @@
     $primaryPink: #ed145b;
     $primaryBlue: #0d4ef7;
     $primaryBlack: #171717;
+    $primaryGrey: #555;
     $primaryWhite: #f1f8fc;
 
     // fonts
@@ -26,6 +27,13 @@
         flex-direction: column;
     }
 
+    @mixin flexSlash {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-end;
+    }
+
     @mixin flexMid {
         display: flex;
         align-items: center;
@@ -38,6 +46,27 @@
         flex: 1 auto;
         justify-content: center;
         align-items: center;
+    }
+
+    @mixin flexWrapfooter {
+        display: flex;
+        flex-direction: row;
+        flex: 1 auto;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    @mixin flexFooter {
+        display: flex;
+        flex-flow: column wrap;
+        align-items: flex-start;
+    }
+
+    @mixin flexHours {
+        display: flex;
+        flex-flow: row wrap;
+        align-content: space-between;
+        justify-content: space-between;
     }
 
     @mixin flexLeft {
@@ -53,7 +82,8 @@
 
     @mixin flexLabel {
         display: flex;
-        flex-flow: column nowrap;
+        flex-flow: column wrap;
+        flex: 1 auto;
         justify-content: flex-start;
     }
 
@@ -64,7 +94,7 @@
         justify-content: center;
     }
 
-    @mixin flexInsta {
+    @mixin flexSocial {
         display: flex;
         flex: 1 auto;
         flex-flow: row wrap;

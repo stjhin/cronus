@@ -1,0 +1,103 @@
+.wrapFooter {
+    background-color: $primaryBlack;
+    font-family: $primaryFont;
+    padding: 3rem;
+    @include flexWrapfooter;
+}
+
+.insideRow {
+    @include flexRow;
+}
+
+.logoFooter {
+    margin-bottom: 2rem;
+}
+
+.footColumns {
+    color: $primaryGrey;
+    width: 50%;
+    margin: 0 1.5rem;
+    @include flexFooter;
+}
+
+.footColumn {
+    width: 100%;
+    @include flexLabel;
+}
+
+.infoTitle {
+    text-transform: uppercase;
+    font-size: .6rem;
+    color: $primaryGrey;
+}
+
+p.infoInfo {
+    font-size: .8rem;
+    line-height: 1.75;
+}
+
+span.infoInfo {
+    font-size: .8rem;
+    line-height: 2;
+    margin-bottom: 1rem;
+}
+
+.infoText{
+    color: $primaryWhite;
+    font-size: .8rem;
+}
+
+.footTitle {
+    font-weight: 800;
+    text-transform: uppercase;
+    font-size: .9rem;
+    padding-bottom: 3rem;
+    @include flexLabel;
+}
+
+.footSocial {
+    @include flexSocial;
+}
+
+.infoTwitter {
+    color: $primaryWhite;
+    margin-bottom: 1rem;
+}
+
+.twitter {
+    color: $primaryWhite;
+    font-family: $primaryFont;
+    padding-left: 1rem;
+}
+
+.twitterTitle {
+    color: $primaryGrey;
+    text-transform: uppercase;
+    font-size: .7rem;
+}
+
+.twitterPadding {
+    padding: 0 0 0 2rem;
+}
+
+.hoursColumn {
+    width: 100%;
+    @include flexLabel;
+}
+
+.hours {
+    text-transform: uppercase;
+    font-size: .7rem;
+    color: $primaryWhite;
+    margin: 1rem 0;
+    @include flexHours;
+}
+
+.footCopy {
+    background-color: $primaryBlack;
+    font-family: $primaryFont;
+    color: $primaryGrey;
+    text-transform: uppercase;
+    padding: 3rem 0;
+    @include flexCenter;
+}

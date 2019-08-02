@@ -190,11 +190,24 @@ html {
   overflow: hidden; }
 
 .container {
-  height: 100vh;
+  height: 1000px;
   width: 100vw; }
 
+.containerHero {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+  -ms-flex-line-pack: justify;
+  align-content: space-between;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+
 .containerText {
-  height: 80vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -217,7 +230,7 @@ html {
   color: #f1f8fc; }
 
 header {
-  min-height: 100vh;
+  min-height: 1000px;
   background: -webkit-linear-gradient(45deg, rgba(110, 69, 226, 0.5), rgba(237, 20, 91, 0.5));
   background: -o-linear-gradient(45deg, rgba(110, 69, 226, 0.5), rgba(237, 20, 91, 0.5));
   background: linear-gradient(45deg, rgba(110, 69, 226, 0.5), rgba(237, 20, 91, 0.5));
@@ -231,10 +244,11 @@ header {
 .titleHero {
   font-family: "Nunito", sans-serif;
   color: #f1f8fc;
-  font-size: 3rem;
+  font-size: 4rem;
   font-weight: 800;
   text-align: center;
-  line-height: 2.75rem; }
+  margin-top: 10rem;
+  line-height: 4rem; }
 
 .subtitleHero {
   font-family: "Nunito", sans-serif;
@@ -263,6 +277,51 @@ em.emHero {
   font-family: "Libre Baskerville", serif;
   font-weight: 400; }
 
+.leftText {
+  -webkit-transform: rotate(270deg);
+  -ms-transform: rotate(270deg);
+  transform: rotate(270deg);
+  margin-top: 20rem;
+  font-family: "Nunito", sans-serif;
+  color: #f1f8fc; }
+
+.rightText {
+  font-family: "Nunito", sans-serif;
+  color: #f1f8fc;
+  -webkit-transition: .3s all;
+  -o-transition: .3s all;
+  transition: .3s all;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end; }
+
+a.slash {
+  position: relative; }
+  a.slash:before {
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    height: 30px;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    width: 1px;
+    background: white;
+    opacity: 0; }
+  a.slash:hover:before {
+    opacity: 1; }
+
 /* Media Query */
 a.topNav {
   position: relative; }
@@ -278,7 +337,7 @@ a.topNav {
   a.topNav:hover:before {
     opacity: 1; }
 
-.logo-header {
+.logoHeader {
   margin-top: 1rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -407,7 +466,7 @@ ul {
 
 a {
   display: block;
-  padding: 15px 25px;
+  padding: .25rem 1rem;
   color: white;
   text-decoration: none;
   -webkit-transition: .75s ease;
@@ -426,6 +485,202 @@ a {
   flex: 1 auto; }
 
 .wrapText {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+  -ms-flex: 1 auto;
+  flex: 1 auto;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column; }
+
+.wrapFooter {
+  background-color: #171717;
+  font-family: "Nunito", sans-serif;
+  padding: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-flex: 1;
+  -ms-flex: 1 auto;
+  flex: 1 auto;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start; }
+
+.insideRow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-flex: 1;
+  -ms-flex: 1 auto;
+  flex: 1 auto;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.logoFooter {
+  margin-bottom: 2rem; }
+
+.footColumns {
+  color: #555;
+  width: 50%;
+  margin: 0 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: column wrap;
+  flex-flow: column wrap;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start; }
+
+.footColumn {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: column wrap;
+  flex-flow: column wrap;
+  -webkit-box-flex: 1;
+  -ms-flex: 1 auto;
+  flex: 1 auto;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start; }
+
+.infoTitle {
+  text-transform: uppercase;
+  font-size: .6rem;
+  color: #555; }
+
+p.infoInfo {
+  font-size: .8rem;
+  line-height: 1.75; }
+
+span.infoInfo {
+  font-size: .8rem;
+  line-height: 2;
+  margin-bottom: 1rem; }
+
+.infoText {
+  color: #f1f8fc;
+  font-size: .8rem; }
+
+.footTitle {
+  font-weight: 800;
+  text-transform: uppercase;
+  font-size: .9rem;
+  padding-bottom: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: column wrap;
+  flex-flow: column wrap;
+  -webkit-box-flex: 1;
+  -ms-flex: 1 auto;
+  flex: 1 auto;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start; }
+
+.footSocial {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+  -ms-flex: 1 auto;
+  flex: 1 auto;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap; }
+
+.infoTwitter {
+  color: #f1f8fc;
+  margin-bottom: 1rem; }
+
+.twitter {
+  color: #f1f8fc;
+  font-family: "Nunito", sans-serif;
+  padding-left: 1rem; }
+
+.twitterTitle {
+  color: #555;
+  text-transform: uppercase;
+  font-size: .7rem; }
+
+.twitterPadding {
+  padding: 0 0 0 2rem; }
+
+.hoursColumn {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: column wrap;
+  flex-flow: column wrap;
+  -webkit-box-flex: 1;
+  -ms-flex: 1 auto;
+  flex: 1 auto;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start; }
+
+.hours {
+  text-transform: uppercase;
+  font-size: .7rem;
+  color: #f1f8fc;
+  margin: 1rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+  -ms-flex-line-pack: justify;
+  align-content: space-between;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+
+.footCopy {
+  background-color: #171717;
+  font-family: "Nunito", sans-serif;
+  color: #555;
+  text-transform: uppercase;
+  padding: 3rem 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
