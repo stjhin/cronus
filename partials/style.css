@@ -261,7 +261,7 @@ header {
 .ctaHero {
   background-color: #6e45e2;
   font-family: "Nunito", sans-serif;
-  padding: 1rem 5rem 1.25rem;
+  padding: 1.25rem 4rem 1.25rem 4rem;
   border-radius: 100rem;
   color: #f1f8fc;
   font-weight: 800;
