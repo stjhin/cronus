@@ -225,6 +225,12 @@ html {
   -ms-flex-direction: column;
   flex-direction: column; }
 
+.containerText.white {
+  color: #f1f8fc !important; }
+
+.containerText.black {
+  color: #171717 !important; }
+
 .containerAbout {
   height: 100vh;
   width: 100vw;
@@ -233,12 +239,6 @@ html {
 .fa-search,
 .fa-times {
   color: #f1f8fc; }
-
-.fa-puzzle-piece,
-.fa-bullseye,
-.fa-pie-chart {
-  color: #f1f8fc;
-  font-size: 3rem !important; }
 
 .columns {
   display: -webkit-box;
@@ -366,16 +366,33 @@ header {
 
 .aboutHero {
   font-family: "Nunito", sans-serif;
-  color: #f1f8fc;
   font-size: 2rem;
   font-weight: 600;
   text-align: center;
-  margin-top: 10rem;
-  line-height: 2rem; }
+  margin-top: 1rem;
+  padding-bottom: 5rem;
+  line-height: 3rem; }
+  .aboutHero:before {
+    content: '';
+    position: absolute;
+    top: 12%;
+    left: 50%;
+    height: 30px;
+    width: 1px;
+    background: white;
+    opacity: 1; }
+
+.aboutHero.black {
+  color: #171717; }
+
+.abtTitle {
+  font-family: "Nunito", sans-serif;
+  font-size: .8rem;
+  text-transform: uppercase;
+  margin-top: 5rem; }
 
 .subtitleAbout {
   font-family: "Nunito", sans-serif;
-  color: #f1f8fc;
   text-transform: uppercase;
   font-size: 1rem 5rem 1.25rem 5rem;
   padding-top: 1rem;
@@ -460,14 +477,21 @@ a.slash {
 
 .abtColtitle {
   font-family: "Nunito", sans-serif;
-  color: #f1f8fc;
   font-size: 1.5rem;
   font-weight: 800; }
 
 .abtColtext {
   font-family: "Nunito", sans-serif;
-  color: #f1f8fc;
-  font-size: 1rem; }
+  font-size: 1rem;
+  font-weight: 300; }
+
+.abtImage {
+  border-radius: 10px;
+  margin-top: 3rem;
+  -webkit-filter: drop-shadow(16px 16px 10px rgba(0, 0, 0, 0.5));
+  filter: drop-shadow(16px 16px 10px rgba(0, 0, 0, 0.5));
+  position: absolute;
+  left: 20%; }
 
 /* Media Query */
 a.topNav {
@@ -615,7 +639,7 @@ ul {
 a {
   display: block;
   padding: .25rem 1rem;
-  color: white;
+  color: #f1f8fc;
   text-decoration: none;
   -webkit-transition: .75s ease;
   -o-transition: .75s ease;
@@ -649,6 +673,31 @@ a {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column; }
+
+.wrapText.pink {
+  color: #ed145b; }
+
+.wrapAbt {
+  color: #f1f8fc;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+  -ms-flex: 1 auto;
+  flex: 1 auto;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column; }
+
+.white {
+  background-color: #f1f8fc; }
 
 .wrapFooter {
   background-color: #171717;

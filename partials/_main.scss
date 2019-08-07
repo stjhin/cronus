@@ -9,7 +9,7 @@ ul {
 a {
     display: block;
     padding: .25rem 1rem;
-    color: white;
+    color: $primaryWhite;
     text-decoration: none;
     transition: .75s ease;
 }
@@ -20,4 +20,17 @@ a {
 
 .wrapText {
     @include flexCenter;
+}
+
+.wrapText.pink {
+    color: $primaryPink;
+}
+
+.wrapAbt {
+    color: $primaryWhite;
+    @include flexCenter;   
+}
+
+.white {
+    background-color: $primaryWhite;
 }
