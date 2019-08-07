@@ -63,6 +63,7 @@ span.country {
     .exit-cancel {
         font-size: 25px;
         padding: 0 2rem;
+        color: $primaryWhite;
         @include flexRight;
     }
 
@@ -74,7 +75,7 @@ span.country {
         right: 0;
         bottom: 0;
         background: rgba(0,0,0,0.99);
-        color: white;
+        color:$primaryWhite;
     }
 
     .menu ul {

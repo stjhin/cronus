@@ -190,8 +190,8 @@ html {
   overflow: hidden; }
 
 .container {
-  height: 1000px;
-  width: 100vh; }
+  height: 100vh;
+  width: 100vw; }
 
 .containerHero {
   display: -webkit-box;
@@ -225,9 +225,37 @@ html {
   -ms-flex-direction: column;
   flex-direction: column; }
 
+.containerAbout {
+  height: 100vh;
+  width: 100vw;
+  background-color: #ed145b; }
+
 .fa-search,
 .fa-times {
   color: #f1f8fc; }
+
+.fa-puzzle-piece,
+.fa-bullseye,
+.fa-pie-chart {
+  color: #f1f8fc;
+  font-size: 3rem !important; }
+
+.columns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row; }
+
+.column3 {
+  width: 33.33%;
+  padding: 1rem;
+  text-align: center; }
 
 /*
 Carousel
@@ -317,6 +345,9 @@ Carousel
 
 header {
   min-height: 1000px;
+  background: -webkit-linear-gradient(45deg, rgba(110, 69, 226, 0.5), rgba(237, 20, 91, 0.5));
+  background: -o-linear-gradient(45deg, rgba(110, 69, 226, 0.5), rgba(237, 20, 91, 0.5));
+  background: linear-gradient(45deg, rgba(110, 69, 226, 0.5), rgba(237, 20, 91, 0.5));
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -332,6 +363,23 @@ header {
   text-align: center;
   margin-top: 10rem;
   line-height: 4rem; }
+
+.aboutHero {
+  font-family: "Nunito", sans-serif;
+  color: #f1f8fc;
+  font-size: 2rem;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 10rem;
+  line-height: 2rem; }
+
+.subtitleAbout {
+  font-family: "Nunito", sans-serif;
+  color: #f1f8fc;
+  text-transform: uppercase;
+  font-size: 1rem 5rem 1.25rem 5rem;
+  padding-top: 1rem;
+  padding-bottom: 3rem; }
 
 .subtitleHero {
   font-family: "Nunito", sans-serif;
@@ -359,6 +407,11 @@ a.ctaHero:hover {
 em.emHero {
   font-family: "Libre Baskerville", serif;
   font-weight: 400; }
+
+em.emAbout {
+  font-family: "Libre Baskerville", serif !important;
+  font-weight: 400;
+  font-size: 2rem; }
 
 .leftText {
   -webkit-transform: rotate(270deg);
@@ -404,6 +457,17 @@ a.slash {
     opacity: 0; }
   a.slash:hover:before {
     opacity: 1; }
+
+.abtColtitle {
+  font-family: "Nunito", sans-serif;
+  color: #f1f8fc;
+  font-size: 1.5rem;
+  font-weight: 800; }
+
+.abtColtext {
+  font-family: "Nunito", sans-serif;
+  color: #f1f8fc;
+  font-size: 1rem; }
 
 /* Media Query */
 a.topNav {
@@ -494,6 +558,7 @@ span.country {
   .exit-cancel {
     font-size: 25px;
     padding: 0 2rem;
+    color: #f1f8fc;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -508,7 +573,7 @@ span.country {
     right: 0;
     bottom: 0;
     background: rgba(0, 0, 0, 0.99);
-    color: white; }
+    color: #f1f8fc; }
   .menu ul {
     display: -webkit-box;
     display: -ms-flexbox;
