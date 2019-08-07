@@ -31,6 +31,78 @@ a {
     @include flexCenter;   
 }
 
-.white {
-    background-color: $primaryWhite;
+.abtColtitle {
+    font-family: $primaryFont;
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+
+.abtColtext {
+    font-family: $primaryFont;
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+.abtImage {
+    border-radius: 10px;
+    margin-top: 10rem;
+    filter: drop-shadow(16px 16px 10px rgba(0,0,0,0.5));
+    position: absolute;
+    left: 20%;
+}
+
+.abtContent {
+    color: $primaryGrey !important;
+    font-size: .8rem;
+    font-family: $primaryFont;
+    line-height: 1.5rem;
+    width: 50%;
+    text-align: left;
+    padding-top: 2rem;
+}
+
+.iconContent {
+    color: $primaryGrey !important;
+    font-size: .8rem;
+    font-family: $primaryFont;
+    line-height: 1.5rem;
+    width: 75%;
+    text-align: left;
+}
+
+
+.secondTitle {
+    font-family: $primaryFont;
+    font-size: .8rem;
+    text-transform: uppercase;
+    margin-top: 5rem;
+    color: $primaryPink;
+        &:after {
+            content: '';
+            position: absolute;
+            top: 250%;
+            left: 50%;
+            height: 30px;
+            width: 1px;
+            background-color: $primaryBlack !important;
+            opacity: 1;
+        }
+}
+
+.thirdTitle {
+    font-family: $primaryFont;
+    font-size: .8rem;
+    text-transform: uppercase;
+    margin-top: 5rem;
+    color: $primaryPink;
+        &:after {
+            content: '';
+            position: absolute;
+            top: 370%;
+            left: 50%;
+            height: 30px;
+            width: 1px;
+            background-color: $primaryBlack !important;
+            opacity: 1;
+        }
 }

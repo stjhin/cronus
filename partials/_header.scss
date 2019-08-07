@@ -20,26 +20,19 @@ header {
 
 .aboutHero {
     font-family: $primaryFont;
-    font-size: 2rem;
+    font-size: 3rem;
     font-weight: 600;
     text-align: center;
     margin-top: 1rem;
-    padding-bottom: 5rem;
     line-height: 3rem;
-        &:before {
-            content: '';
-            position: absolute;
-            top: 12%;
-            left: 50%;
-            height: 30px;
-            width: 1px;
-            background: white;
-            opacity: 1;
-        }
 }
 
 .aboutHero.black {
     color: $primaryBlack;
+}
+
+.aboutHero.white {
+    color: $primaryWhite;
 }
 
 .abtTitle {
@@ -47,6 +40,20 @@ header {
     font-size: .8rem;
     text-transform: uppercase;
     margin-top: 5rem;
+}
+
+.abtTitle.white {
+    color: $primaryWhite;
+        &:before {
+            content: '';
+            position: absolute;
+            top: 18%;
+            left: 50%;
+            height: 30px;
+            width: 1px;
+            background-color: $primaryWhite !important;
+            opacity: 1;
+        }
 }
 
 .subtitleAbout  {
@@ -91,7 +98,7 @@ em.emHero {
 em.emAbout {
     font-family: $secondaryFont !important;
     font-weight: 400;
-    font-size: 2rem;
+    font-size: 3rem;
 }
 
 .leftText {
@@ -125,26 +132,6 @@ a.slash {
     &:hover:before {
         opacity: 1;
     }
-}
-
-.abtColtitle {
-    font-family: $primaryFont;
-    font-size: 1.5rem;
-    font-weight: 800;
-}
-
-.abtColtext {
-    font-family: $primaryFont;
-    font-size: 1rem;
-    font-weight: 300;
-}
-
-.abtImage {
-    border-radius: 10px;
-    margin-top: 3rem;
-    filter: drop-shadow(16px 16px 10px rgba(0,0,0,0.5));
-    position: absolute;
-    left: 20%;
 }
 
 /* Media Query */

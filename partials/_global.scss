@@ -34,11 +34,93 @@
     @include flexMid;
 }
 
+.columns.white {
+    color: $primaryWhite;
+}
+
+.column {
+    @include flexCenter;
+}
+
+.column50 {
+    @include flexMid;
+}
 
 .column3{
     width: 33.33%;
     padding: 1rem;
     text-align: center;
+    @include flexCenter;
+}
+
+.column32{
+    width: 33.33%;
+    padding: 1rem;
+    text-align: left;
+    @include flexFooter;
+}
+
+.ms5 {
+    margin-right: 5rem;
+    margin-left: 5rem;
+}
+
+.pb10{
+    padding-bottom: 10rem;
+}
+
+.pt2 {
+    padding-top: 2rem;
+}
+
+.pt5 {
+    padding-top: 5rem;
+}
+
+.pt10 {
+    padding-top: 10rem;
+}
+
+.pt20 {
+    padding-top: 20rem;
+}
+
+.buttonPurple {
+    background-color: $primaryPurple;
+    font-family: $primaryFont;
+    padding: 1.25rem 4rem 1.35rem 4rem;
+    border-radius: 100rem;
+    color: $primaryWhite;
+    font-weight: 800;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: .8rem;
+    margin-right: 1rem;
+    filter: drop-shadow(5px 5px 10px rgba(0,0,0,0.3));
+}
+
+a.buttonPurple:hover {
+    background-color: $primaryPink;
+    color: $primaryWhite;
+}
+
+.buttonDefault {
+    background-color: $primaryWhite;
+    font-family: $primaryFont;
+    padding: 1.25rem 4rem 1.35rem 4rem;
+    border-radius: 100rem;
+    color: $primaryGrey;
+    font-weight: 800;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: .8rem;
+    margin-right: 1rem;
+    filter: drop-shadow(5px 5px 10px rgba(0,0,0,0.3));
+}
+
+a.buttonDefault:hover {
+    background-color: $primaryPurple;
+    color: $primaryWhite;
 }
 
 /*
