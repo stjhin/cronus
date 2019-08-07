@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="/partials/style.css">
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400i,700|Nunito:300,400,600,700,800,900&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.1.2/flickity.min.css" rel="stylesheet">
 </head>
 <body>
     <header class="container">
@@ -17,7 +18,7 @@
                 <img src="/assets/logos/logo-cronus.png" alt="Cronus logo">
             <div class="hamburger"><i class="fa fa-bars"></i></div>
             <div class="menu">
-                <ul class="nav-center">
+                <ul class="navCenter">
                     <li class="exit-cancel"><i class="fa fa-times"></i></li>
                     <li><a class="topNav" href="#">Home</a></li>
                     <li><a class="topNav" href="#">About</a></li>
@@ -28,7 +29,7 @@
                     <li><a class="topNav" href="#">Contact</a></li>
                 </ul>
             </div>
-            <div class="nav-right">
+            <div class="navRight">
                 <i class="fa fa-search"></i>
                 <img class="flag" src="assets/Icons/icon-uk.svg">
                 <span class="country">EN</span>
@@ -37,6 +38,17 @@
         </nav>
 <!-- hero -->
 <div class="containerHero">
+    <div class="mainCarousel" data-flickity='{"wrapAround": true}'>
+        <div class="carousel-cell">
+            <img src="/assets/image-1.jpeg">
+        </div>
+        <div class="carousel-cell">
+            <img src="assets/image-2.jpeg">
+        </div>
+        <div class="carousel-cell">
+            <img src="assets/image-3.jpeg">
+        </div>
+    </div>
     <div class="leftText">
         <p>info@moontheme.net</p>
         <p>+343 4455 3333</p>
@@ -127,6 +139,16 @@
 </footer>
 <!-- Load in jQuery -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src="js/index.js"></script>
+<script async type="text/javascript" src="js/index.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha256-FgpCb/KJQlLNf0u91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.1.2/flickity.pkgd.min.js"></script>
+<script>
+$(function() {
+    $('.mainCarousel').flickity({
+        wrapAround: true;
+        autoPlay: true;
+    })
+});
+</script>
 </body>
 </html>

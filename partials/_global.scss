@@ -1,6 +1,6 @@
 .container {
     height: 1000px;
-    width: 100vw;
+    width: 100vh;
 }
 
 .containerHero {
@@ -14,4 +14,79 @@
 .fa-search,
 .fa-times {
     color: $primaryWhite;
+}
+
+/*
+Carousel
+*/
+/*---- NUMBER OF SLIDE CONFIGURATION ----*/
+* { box-sizing: border-box; }
+.mainCarousel {
+    width: 100%;
+    height: 100%;
+    padding: 5rem;
+    z-index: -999;
+}
+
+.mainCarousel:after {
+    background: linear-gradient(45deg, $gradPurple, $gradPink);
+}
+
+.carousel-cell {
+    width: 100%;
+}
+.carousel-cell img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.carousel-cell-image {
+    display: block;
+    max-height: 100%;
+    margin: 0 auto;
+    max-width: 100%;
+    opacity: 0;
+    -webkit-transition: opacity 0.4s;
+            transition: opacity 0.4s;
+}
+/* fade in lazy loaded image */
+.carousel-cell-image.flickity-lazyloaded,
+.carousel-cell-image.flickity-lazyerror {
+    opacity: 1;
+}
+/* carousel controller */
+.flickity-button {
+    background: $primaryWhite;
+}
+.flickity-prev-next-button {
+    width: 3rem !important;
+    height: 3rem !important;
+    border-radius: 5px;
+}
+.flickity-prev-next-button svg {
+    fill: $primaryWhite !important;
+}
+/* icon color */
+.flickity-button-icon {
+    fill: $primaryWhite !important;
+}
+.flickity-page-dots {
+    position: relative !important;
+    display: flex;
+    justify-content: center;
+}
+.flickity-page-dots .dot {
+    background: $primaryWhite !important;
+}
+/* position outside */
+.flickity-prev-next-button.previous {
+    display: flex !important;
+    border: 1px solid $primaryWhite;
+}
+.flickity-prev-next-button.next {
+    display: flex !important;
+    border: 1px solid $primaryWhite;
+}
+.flickity-prev-next-button .arrow {
+    fill: $primaryWhite !important;
 }

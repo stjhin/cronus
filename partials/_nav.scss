@@ -25,12 +25,12 @@ a.topNav {
     @include flexCenter;
 }
 
-.nav-center {
+.navCenter {
     font-family: $primaryFont;
     font-size: 0.8em;
 }
 
-.nav-right {
+.navRight {
     position: relative;
     @include flexRight;
 }
@@ -89,12 +89,12 @@ span.country {
         padding: 30px;
     }
 
-    .logo-header {
+    .logoHeader {
         margin-top: 1rem;
         @include flexCopy;
     }
 
-    .nav-right {
+    .navRight {
         display: none;
     }
 }
