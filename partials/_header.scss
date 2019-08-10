@@ -94,6 +94,13 @@ em.emAbout {
     @include flexSlash;
 }
 
+.scrollText {
+    transform: rotate(270deg);
+    font-family: $primaryFont;
+    color: $primaryWhite;
+    margin-top: -60rem;
+}
+
 a.slash {
     position: relative;
 
