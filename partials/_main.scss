@@ -70,6 +70,27 @@ a {
     text-align: left;
 }
 
+.abtTitle {
+    font-family: $primaryFont;
+    font-size: .8rem;
+    text-transform: uppercase;
+    margin-top: 5rem;
+}
+
+.abtTitle.white {
+    color: $primaryWhite;
+        &:before {
+            content: '';
+            position: absolute;
+            top: 12%;
+            left: 50%;
+            height: 30px;
+            width: 1px;
+            background-color: $primaryWhite !important;
+            opacity: 1;
+        }
+}
+
 
 .secondTitle {
     font-family: $primaryFont;
@@ -80,7 +101,7 @@ a {
         &:after {
             content: '';
             position: absolute;
-            top: 250%;
+            top: 170%;
             left: 50%;
             height: 30px;
             width: 1px;
@@ -98,7 +119,7 @@ a {
         &:after {
             content: '';
             position: absolute;
-            top: 370%;
+            top: 250%;
             left: 50%;
             height: 30px;
             width: 1px;

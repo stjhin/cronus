@@ -1,11 +1,10 @@
 header {
-    min-height: 1000px;
+    min-height: 600px;
     background: linear-gradient(45deg, $gradPurple, $gradPink);
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    @include ps3;
 }
 
 .titleHero {
@@ -33,27 +32,6 @@ header {
 
 .aboutHero.white {
     color: $primaryWhite;
-}
-
-.abtTitle {
-    font-family: $primaryFont;
-    font-size: .8rem;
-    text-transform: uppercase;
-    margin-top: 5rem;
-}
-
-.abtTitle.white {
-    color: $primaryWhite;
-        &:before {
-            content: '';
-            position: absolute;
-            top: 18%;
-            left: 50%;
-            height: 30px;
-            width: 1px;
-            background-color: $primaryWhite !important;
-            opacity: 1;
-        }
 }
 
 .subtitleAbout  {
@@ -93,6 +71,7 @@ a.ctaHero:hover {
 em.emHero {
     font-family: $secondaryFont;
     font-weight: 400;
+    font-size: 4rem;
 }
 
 em.emAbout {

@@ -18,7 +18,8 @@ a.topNav {
 
 .logoHeader {
     margin-top: 1rem;
-    @include flexRow
+    @include flexRow;
+    @include ps3;
 }
 
 .menu {

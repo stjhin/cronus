@@ -190,10 +190,11 @@ html {
   overflow: hidden; }
 
 .container {
-  height: 100vh;
+  height: 600px;
   width: 100vw; }
 
 .containerHero {
+  z-index: -100;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -385,10 +386,15 @@ Carousel
   box-sizing: border-box; }
 
 .mainCarousel {
-  width: 100%;
-  height: 100%;
-  padding: 5rem;
-  z-index: -999; }
+  width: 100vw;
+  height: 600px;
+  z-index: -999;
+  margin-top: -35rem;
+  min-height: 1000px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
 
 .mainCarousel:after {
   background: -webkit-linear-gradient(45deg, rgba(110, 69, 226, 0.5), rgba(237, 20, 91, 0.5));
@@ -447,32 +453,20 @@ Carousel
   background: #f1f8fc !important; }
 
 /* position outside */
-.flickity-prev-next-button.previous {
-  display: -webkit-box !important;
-  display: -ms-flexbox !important;
-  display: flex !important;
-  border: 1px solid #f1f8fc; }
-
-.flickity-prev-next-button.next {
-  display: -webkit-box !important;
-  display: -ms-flexbox !important;
-  display: flex !important;
-  border: 1px solid #f1f8fc; }
-
+.flickity-prev-next-button.previous,
+.flickity-prev-next-button.next,
 .flickity-prev-next-button .arrow {
-  fill: #f1f8fc !important; }
+  display: none; }
 
 header {
-  min-height: 1000px;
+  min-height: 600px;
   background: -webkit-linear-gradient(45deg, rgba(110, 69, 226, 0.5), rgba(237, 20, 91, 0.5));
   background: -o-linear-gradient(45deg, rgba(110, 69, 226, 0.5), rgba(237, 20, 91, 0.5));
   background: linear-gradient(45deg, rgba(110, 69, 226, 0.5), rgba(237, 20, 91, 0.5));
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
-  padding-left: 3rem;
-  padding-right: 3rem; }
+  background-size: cover; }
 
 .titleHero {
   font-family: "Nunito", sans-serif;
@@ -496,24 +490,6 @@ header {
 
 .aboutHero.white {
   color: #f1f8fc; }
-
-.abtTitle {
-  font-family: "Nunito", sans-serif;
-  font-size: .8rem;
-  text-transform: uppercase;
-  margin-top: 5rem; }
-
-.abtTitle.white {
-  color: #f1f8fc; }
-  .abtTitle.white:before {
-    content: '';
-    position: absolute;
-    top: 18%;
-    left: 50%;
-    height: 30px;
-    width: 1px;
-    background-color: #f1f8fc !important;
-    opacity: 1; }
 
 .subtitleAbout {
   font-family: "Nunito", sans-serif;
@@ -547,7 +523,8 @@ a.ctaHero:hover {
 
 em.emHero {
   font-family: "Libre Baskerville", serif;
-  font-weight: 400; }
+  font-weight: 400;
+  font-size: 4rem; }
 
 em.emAbout {
   font-family: "Libre Baskerville", serif !important;
@@ -631,7 +608,9 @@ a.topNav {
   justify-content: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
-  align-items: center; }
+  align-items: center;
+  padding-left: 3rem;
+  padding-right: 3rem; }
 
 .menu {
   display: -webkit-box;
@@ -837,6 +816,24 @@ a {
   width: 75%;
   text-align: left; }
 
+.abtTitle {
+  font-family: "Nunito", sans-serif;
+  font-size: .8rem;
+  text-transform: uppercase;
+  margin-top: 5rem; }
+
+.abtTitle.white {
+  color: #f1f8fc; }
+  .abtTitle.white:before {
+    content: '';
+    position: absolute;
+    top: 12%;
+    left: 50%;
+    height: 30px;
+    width: 1px;
+    background-color: #f1f8fc !important;
+    opacity: 1; }
+
 .secondTitle {
   font-family: "Nunito", sans-serif;
   font-size: .8rem;
@@ -846,7 +843,7 @@ a {
   .secondTitle:after {
     content: '';
     position: absolute;
-    top: 250%;
+    top: 170%;
     left: 50%;
     height: 30px;
     width: 1px;
@@ -862,7 +859,7 @@ a {
   .thirdTitle:after {
     content: '';
     position: absolute;
-    top: 370%;
+    top: 250%;
     left: 50%;
     height: 30px;
     width: 1px;
