@@ -45,7 +45,7 @@ a {
 
 .abtImage {
     border-radius: 10px;
-    margin-top: 10rem;
+    margin-top: 3rem;
     filter: drop-shadow(16px 16px 10px rgba(0,0,0,0.5));
     position: absolute;
     left: 20%;
@@ -101,7 +101,7 @@ a {
         &:after {
             content: '';
             position: absolute;
-            top: 170%;
+            top: 200%;
             left: 50%;
             height: 30px;
             width: 1px;

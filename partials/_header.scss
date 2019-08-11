@@ -101,6 +101,21 @@ em.emAbout {
     margin-top: -60rem;
 }
 
+.fullCircle {
+    width: 20px;
+    height: 20px;
+    color: $primaryWhite;
+    z-index: 99999;
+}
+
+.halfCircle {
+    width: 20px;
+    height: 20px;
+    color: $primaryWhite;
+    opacity: .5;
+    z-index: 99999;
+}
+
 a.slash {
     position: relative;
 

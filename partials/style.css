@@ -338,8 +338,8 @@ html {
 .pt10 {
   padding-top: 10rem; }
 
-.pt20 {
-  padding-top: 20rem; }
+.pt50 {
+  padding-top: 50rem; }
 
 .buttonPurple {
   background-color: #6e45e2;
@@ -566,6 +566,19 @@ em.emAbout {
   font-family: "Nunito", sans-serif;
   color: #f1f8fc;
   margin-top: -60rem; }
+
+.fullCircle {
+  width: 20px;
+  height: 20px;
+  color: #f1f8fc;
+  z-index: 99999; }
+
+.halfCircle {
+  width: 20px;
+  height: 20px;
+  color: #f1f8fc;
+  opacity: .5;
+  z-index: 99999; }
 
 a.slash {
   position: relative; }
@@ -801,7 +814,7 @@ a {
 
 .abtImage {
   border-radius: 10px;
-  margin-top: 10rem;
+  margin-top: 3rem;
   -webkit-filter: drop-shadow(16px 16px 10px rgba(0, 0, 0, 0.5));
   filter: drop-shadow(16px 16px 10px rgba(0, 0, 0, 0.5));
   position: absolute;
@@ -851,7 +864,7 @@ a {
   .secondTitle:after {
     content: '';
     position: absolute;
-    top: 170%;
+    top: 200%;
     left: 50%;
     height: 30px;
     width: 1px;
