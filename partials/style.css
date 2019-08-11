@@ -880,7 +880,7 @@ a {
   .thirdTitle:after {
     content: '';
     position: absolute;
-    top: 250%;
+    top: 285%;
     left: 50%;
     height: 30px;
     width: 1px;
